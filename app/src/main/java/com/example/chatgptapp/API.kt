@@ -11,7 +11,7 @@ import retrofit2.http.POST
 
 
 interface apiService {
-    @Headers("Authorization: Bearer ${APIKEY.apikey}")
+    @Headers("Authorization: Bearer ${APIKEY.theapikey}")
     @POST("v1/completions")
     suspend fun getApi(@Body completionResponse: CompletionRequest): Response<CompletionResponse>
 }
